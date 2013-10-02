@@ -69,7 +69,7 @@ Balanced.Card = Balanced.FundingInstrument.extend({
 							self.set('errorDescription', 'Sorry, there was an error associating this card.');
 							self.set('isSaving', false);
 							promise.reject();
-						})
+						});
 					});
 					break;
 				case 400:
